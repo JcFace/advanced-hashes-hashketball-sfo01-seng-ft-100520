@@ -193,6 +193,7 @@ def player_stats(player_name)
 end
 
 def big_shoe_rebounds
+  biggest_shoe = nil
   game_hash.each do |key, value|
     value[:players].each do |player|
       binding.pry
