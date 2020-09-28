@@ -192,8 +192,10 @@ def player_stats(player_name)
  end 
 end
 
-1) hashketball #player_numbers returns the player jersey numbers
-     Failure/Error: expect(player_numbers("Brooklyn Nets").sort).to eq(brooklyn_numbers)
-
-       expected: [0, 1, 11, 30, 31]
-            got: [0, 0, 1, 2, 4, 8, 11, 30, 31, 33]
+def big_shoe_rebounds
+  game_hash.each do |key, value|
+    value[:players].each do |player|
+      binding.pry
+    end
+  end 
+end 
